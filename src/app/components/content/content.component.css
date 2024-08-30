@@ -1,0 +1,123 @@
+.container{
+    height: 1320px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto1{
+    display: flex;
+    height: 50%;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../../../assets/img/capa.jpeg);
+    background-size: 1580px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.propostas{
+    background: rgb(0,79,159);
+background: linear-gradient(0deg, rgba(0,79,159,1) 88%, rgba(255,205,0,1) 90%);
+}
+
+.sobre{
+    display: flex;
+    height: 50%;
+    background-color: rgb(0, 79, 159);
+    text-align: center;
+    justify-content: center;
+
+    .bio{
+        font-size: 18px;
+        font-weight: 400;
+        box-sizing: border-box;
+        text-align: justify;
+        color: white;
+        width: 30%;
+        height: 90%;
+
+    }
+    .foto2{
+        color: white;
+        width: 50%;
+        height:91.5%;
+        background-image: url(../../../assets/img/boaventura.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 0.5%;
+    
+      
+    }
+    
+}
+
+
+.redes{
+    background: #ffcd00;
+    height: 6dvb;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.social{
+    height: 6dvb;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.social .instagram ,.redes .facebook, .redes .twitter, .redes .tiktok {
+    width: 50px;
+    background-position: center;
+    background-position: center;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    box-sizing: border-box;
+
+}
+
+
+.redes a:hover{
+    cursor: pointer;
+    background-color: #3602d4;
+}
+
+.instagram{
+    background-image: url(../../../assets/img/instagram.png);
+    background-size: 32px;
+}
+
+.facebook{
+    background-image: url(../../../assets/img/facebook.png);
+    background-size: 18px;
+}
+
+.tiktok{
+    background-image: url(../../../assets/img/tiktok.png);
+    background-size: 30px;
+}
+
+.twitter{
+    background-image: url(../../../assets/img/twitter.png);
+    background-size: 30px;
+}
+
+.saiba{
+    margin-top: 4%;
+    border-radius: 24px;
+    height:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #3602d4;
+}
+
+.saiba:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,195 @@
+/* Estilo geral */
+.container {
+    height: auto; /* Ajustado para permitir o crescimento com o conteúdo */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    align-items: center;
+    background-color: #3000c2;
+    padding: 20px; /* Adiciona algum espaçamento interno */
+}
+
+.logo {
+    width: 220px;
+    height: 220px;
+    background-image: url('/assets/img/vote.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 1%;
+}
+
+.contato {
+    width: 100%; /* Ajustado para ocupar a largura total disponível */
+    max-width: 500px; /* Define um limite máximo para telas maiores */
+    height: auto; /* Ajustado para permitir o crescimento com o conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
+}
+
+.contact {
+    width: 100%;
+    max-width: 450px; /* Define um limite máximo para o contato */
+    height: auto; /* Ajustado para permitir o crescimento com o conteúdo */
+    display: block;
+}
+
+.cnpj {
+    width: 100%; /* Ajustado para ocupar a largura total disponível */
+    max-width: 250px; /* Define um limite máximo para o cnpj */
+    height: auto; /* Ajustado para permitir o crescimento com o conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
+}
+
+.infos {
+    color: white;
+    font-size: 14px;
+    text-align: center; /* Centraliza o texto */
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    align-items: center; /* Alinha ícones e texto verticalmente */
+    margin-bottom: 10px; /* Adiciona espaçamento entre as linhas */
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px; /* Ajusta o espaçamento entre ícones e texto */
+    display: inline-block; /* Garante que o ícone seja tratado como um bloco de linha */
+}
+
+.icon.whatsapp {
+    background-image: url('/assets/img/whatsapp-512.png');
+    background-size: contain;
+}
+
+.icon.mail {
+    background-image: url('/assets/img/mail-512.png');
+    background-size: contain;
+}
+
+.icon.address {
+    background-image: url('/assets/img/pin-8-512.png');
+    background-size: contain;
+}
+
+.text {
+    color: white;
+    font-size: 14px;
+    flex: 1; /* Permite que o texto ocupe o restante do espaço disponível */
+}
+
+.newsletter {
+    width: 100%; /* Ajustado para ocupar a largura total disponível */
+    max-width: 250px; /* Define um limite máximo para a newsletter */
+    height: auto; /* Ajustado para permitir o crescimento com o conteúdo */
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
+}
+
+.assine {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior */
+}
+
+.qr {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    background-image: url('/assets/img/qr.jpeg');
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    .logo {
+        width: 180px;
+        height: 180px;
+    }
+    .contato {
+        max-width: 450px;
+    }
+    .cnpj {
+        max-width: 200px;
+    }
+    .newsletter {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+    .contato {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact {
+        max-width: 100%;
+    }
+    .cnpj {
+        max-width: 150px;
+    }
+    .newsletter {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+    .contato {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact {
+        width: 100%;
+    }
+    .cnpj {
+        width: 100%;
+        max-width: 100%;
+    }
+    .newsletter {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .assine {
+        font-size: 12px;
+    }
+    .infos {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boaventura 15700</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="menu">
+                <a href="">{{menu.home}}</a>
+                <a href="">{{menu.trajetoria}}</a>
+                <a href="">{{menu.propostas}}</a>
+                <a href="">{{menu.projetos}}</a>
+                <a href="https://chat.whatsapp.com/HEa3gnJLYn6KZxlIcm5hZn" target="_blank">{{menu.grupo}}</a>
+                <a href="">{{menu.contatos}}</a>
+            </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const menuList = document.querySelector('.menu-list');
+    
+            menuIcon.addEventListener('click', function() {
+                // Toggle the 'hidden' class to show or hide the menu
+                menuList.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
